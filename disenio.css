@@ -1,47 +1,79 @@
-                body {
+                    body {
                     margin: 0;
                     padding: 0;
-                    font-family: sans-serif;
-                    background-color: #5555c2;
+                    font-family: Arial, Helvetica, sans-serif;
+                    background-color: #e2e2e2e2;
+                }
+
+                .grupo{
+                    width: 369px;
+                    height: 26px;
+                    background: #e30613;
+                    position: absolute;
+                    top: -1.1px;
+                    left: 0% ;
+                    border: 5px solid #e30613;
+                    border-radius: 3px;    
+                }
+                
+                .grupo2{
+                    width: 1500px;
+                    height: 39px;
+                    background: #e30613;
+                    position: absolute;
+                    top: -1%;
+                    left: 0% ;
+                    border: 5px solid #e30613;
+                    border-radius: 1px;
+                }
+                
+                .imagen {
+                    margin: 0px;
+                    border-radius: 50%;
+                    width: 160px;
+                    height: 150px;
+                    position: absolute;
+                    left: 29%;
+                    top: 4%;
+                }
+
+                .box {
+                    width: 300px;
+                    padding: 40px;
+                    position: absolute;
+                    top: 76%;
+                    transform: translate(145%, -50%);
+                    background: #ffffff;
+                    text-align: center;
+                    border-radius: 50px;
                 }
                 
                 .box h1 {
-                    color: white;
+                    color: #CCC;
                     text-transform: uppercase;
                     font-weight: 400;
                 }
                 
                 .box h5 {
-                    color: white;
+                    color: #CCC;
                     text-transform: uppercase;
                     font-weight: 100;
+                    margin: auto;
                 }
-                
-                .box {
-                    width: 300px;
-                    padding: 40px;
-                    position: absolute;
-                    top: 73%;
-                    left: 50;
-                    transform: translate(145%, -50%);
-                    background: #474343;
-                    text-align: center;
-                    border-radius: 50px
-                }
-                
+
                 .box input[type="text"],
                 .box select,
                 .box textarea {
-                    border: 0;
+                    border: 1px;
                     background: none;
                     display: block;
-                    margin: 20px auto;
+                    margin: 15px auto;
                     text-align: center;
-                    border: 2px solid #3489db;
-                    padding: 14px 10px;
-                    width: 200px;
+                    border: 2px solid #e30613;
+                    padding: 14px 0px;
+                    width: 227px;
                     outline: none;
-                    color: white;
+                    color: #706f6f;
                     border-radius: 24px;
                     transition: .25s;
                 }
@@ -50,7 +82,7 @@
                 .box select:focus,
                 .box textarea:focus {
                     width: 280px;
-                    border-color: #2ecc71;
+                    border-color: #e30613;
                 }
                 
                 .radio .checkbox {
@@ -59,38 +91,37 @@
                     top: 60%;
                     left: 50%;
                 }
-               
-                
+
                 label {
-                    position: relative;
-                    color: #2ecc71;
+                    color: #CCC;
                     font-family: sans-serif;
-                    font-size: 15px;
-                    border: 1px solid #2ecc71;
-                    border-radius: 10px;
-                    padding: 4px 5px;
-                    display: flex;
+                    font-size: 18px;
+                    border: 2px solid #e30613;
+                    margin: 6px auto;
+                    border-radius: 35px;
+                    padding: 10px 13px;
+                    display: inline-block;
                     align-items: center;
                     cursor: pointer;
                 }
                 
                 .box input[type = "submit"] {
                     border: 0;
-                    background: none; 
+                    background: none;
                     display: block;
-                    margin: 20px auto;
+                    margin: 0px auto;
                     text-align: center;
-                    border: 2px solid #2ecc71;
+                    border: 4px solid #a2c617;
                     padding: 14px 40px;
                     outline: none;
-                    color: white;
+                    color: #CCC;
                     border-radius: 24px;
                     transition: 0.25s;
-                    cursor:pointer;
-                    
-                    }
+                    cursor: pointer;
+                }
+
                     .box input[type = "submit"]:hover {
-                    background:#2ecc71 ;
+                    background:#a2c617 ;
                     }
                 }
                 select{
@@ -108,11 +139,10 @@
                     font-size: 20px;
                     letter-spacing: 0.5px;
                     cursor: pointer;
-                    background-color: #ff0067;
-                    color: #ffffff;
-                    border: 6px solid #ff0067;
+                    background-color: #e30613;
+                    color: #e30613;
+                    border: 6px solid #e30613;
                     border-radius: 5px;
-
                     background-repeat: no-repeat;
                     background-size: 47px;
                     background-position: 247px 0.5px;
@@ -123,10 +153,10 @@
                     display: none;
                 }
                 select:hover{
-                    border: 6px solid #ff66a3;
+                    border: 6px solid #e30613;
                 }
                 select option{
-                    background-color: #ff0067;
+                    background-color: #ffffff;
                     letter-spacing: 1.2px;
                     font-weight: 400;
                     font-size: 18px;
@@ -136,13 +166,16 @@
                 }
                 
                 .ok {
-                    border: 1px solid #2ecc71;
+                    border: 1px solid #a2c617;
                     border-radius: 10px;
                     width: 20%;
                     padding: 12px;
-                    background-color: #1e6;
-                    color: #fff
+                    background-color: #a2c617;
+                    color: #fff;
+                    position: absolute;
+                    top: 50%;
                 }
+
                 .bad {
                     border: 1px solid #e9a322;
                     border-radius: 10px;
@@ -150,5 +183,7 @@
                     width: 20%;
                     padding: 12px;
                     background-color: #e9a322;
-                    color: #fff
+                    color: #fff;
+                    position: absolute;
+                    top: 50%;
                 }
